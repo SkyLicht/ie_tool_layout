@@ -1,485 +1,4044 @@
 {
-  "line": "J01",
-  "stations": [
-    {
-      "index": 1,
-      "name": "Loader",
-      "owner": "Automation",
-      "automatic": true,
-      "data_collector": null,
-      "render_type": "loader",
-      "operators": [
-        {
-          "render": "rear",
-          "bound": "loader_gkg"
-        }
-      ]
+  "J01": {
+    "render": {
+      "label": "J01"
     },
-    {
-      "index": 3,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "automatic": true,
-      "data_collector": {
-        "name": "SMT_IN"
+    "smt": [
+      {
+        "index": 1,
+        "name": "Loader",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "loader",
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "loader_gkg"
+          }
+        ]
       },
-      "render_type": "conveyor"
-    },
-    {
-      "index": 2,
-      "name": "GKG",
-      "owner": "EE",
-      "automatic": true,
-      "data_collector": null,
-      "render_type": null,
-      "operators": [
-        {
-          "render": "rear",
-          "bound": "loader_gkg"
-        }
-      ]
-    },
-    {
-      "index": 3,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "automatic": true,
-      "data_collector": null,
-      "render_type": "conveyor"
-    },
-    {
-      "index": 5,
-      "name": "SPI",
-      "owner": "EE",
-      "automatic": true,
-      "data_collector": {
-        "name": "SPI1"
+      {
+        "index": 2,
+        "name": "GKG",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": null,
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "loader_gkg"
+          }
+        ]
       },
-      "render_type": null
-    },
-    {
-      "index": 6,
-      "name": "NG-Buffer",
-      "owner": "Automation",
-      "automatic": true,
-      "data_collector": null,
-      "render_type": "buffer_ng"
-    },
-    {
-      "index": 7,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "conveyor"
-    },
-    {
-      "index": 7,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "conveyor"
-    },
-    {
-      "index": 7,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "conveyor"
-    },
-    {
-      "index": 7,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "conveyor"
-    },
-    {
-      "index": 10,
-      "name": "Panasonic",
-      "owner": "EE",
-      "data_collector": null,
-      "render_type": "panasonic_npm",
-      "operators": [
-        {
-          "render": "front",
-          "bound": "panasonic_npm_bot_front"
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "SMT_INPUT1",
+          "render": {
+            "direction": "left"
+          }
         },
-        {
-          "render": "rear",
-          "bound": "panasonic_npm_bot_rear"
-        }
-      ]
-    },
-    {
-      "index": 10,
-      "name": "Panasonic",
-      "owner": "EE",
-      "data_collector": null,
-      "render_type": "panasonic_npm",
-      "operators": [
-        {
-          "render": "front",
-          "bound": "panasonic_npm_bot_front"
+        "render_type": "conveyor"
+      },
+      {
+        "index": 5,
+        "name": "SPI",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": {
+          "name": "SPI1",
+          "render": {
+            "direction": "right"
+          }
         },
-        {
-          "render": "rear",
-          "bound": "panasonic_npm_bot_rear"
-        }
-      ]
-    },
-    {
-      "index": 7,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "conveyor"
-    },
-    {
-      "index": 7,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "conveyor"
-    },
-    {
-      "index": 7,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "conveyor"
-    },
-    {
-      "index": 11,
-      "name": "Fuzion",
-      "owner": "EE",
-      "data_collector": null,
-      "render_type": "fuzion",
-      "operators": [
-        {
-          "render": "rear",
-          "bound": "fuzion_bot"
-        }
-      ]
-    },
-    {
-      "index": 12,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "automatic": true,
-      "data_collector": {
-        "name": "REFLOW_VI1"
+        "render_type": "spi"
       },
-      "render_type": "conveyor"
-    },
-    {
-      "index": 11,
-      "name": "AOI",
-      "owner": "EE",
-      "data_collector": null,
-      "render_type": "aoi_holly"
-    },
-    {
-      "index": 6,
-      "name": "NG-Buffer",
-      "owner": "Automation",
-      "automatic": true,
-      "data_collector": null,
-      "render_type": "buffer_ng"
-    },
-    {
-      "index": 7,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "conveyor"
-    },
-    {
-      "index": 7,
-      "name": "Insert Pallet",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "pallet"
-    },
-    {
-      "index": 7,
-      "name": "Reflow Oven",
-      "owner": "EE",
-      "data_collector": null,
-      "render_type": "reflow_oven"
-    },
-    {
-      "index": 7,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "conveyor"
-    },
-    {
-      "index": 7,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "conveyor"
-    },
-    {
-      "index": 7,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "conveyor"
-    },
-    {
-      "index": 7,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "conveyor"
-    },
-    {
-      "index": 6,
-      "name": "NG-Buffer",
-      "owner": "Automation",
-      "automatic": true,
-      "data_collector": null,
-      "render_type": "buffer_ng"
-    },
-    {
-      "index": 7,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "conveyor"
-    },
-    {
-      "index": 11,
-      "name": "AOI",
-      "owner": "EE",
-      "data_collector": {
-        "name": "AOI_B2"
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
       },
-      "render_type": "aoi_holly"
-    },
-    {
-      "index": 6,
-      "name": "NG-Buffer",
-      "owner": "Automation",
-      "automatic": true,
-      "data_collector": null,
-      "render_type": "buffer_ng"
-    },
-    {
-      "index": 7,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "conveyor"
-    },
-    {
-      "index": 3,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "automatic": true,
-      "data_collector": {
-        "name": "SMT_IN"
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor_x5"
       },
-      "render_type": "conveyor"
-    },
-    {
-      "index": 2,
-      "name": "GKG",
-      "owner": "EE",
-      "automatic": true,
-      "data_collector": null,
-      "render_type": null
-    },
-    {
-      "index": 3,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "automatic": true,
-      "data_collector": null,
-      "render_type": "conveyor"
-    },
-    {
-      "index": 5,
-      "name": "SPI",
-      "owner": "EE",
-      "automatic": true,
-      "data_collector": {
-        "name": "SPI1"
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_bot_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_bot_rear"
+          }
+        ]
       },
-      "render_type": null
-    },
-    {
-      "index": 6,
-      "name": "NG-Buffer",
-      "owner": "Automation",
-      "automatic": true,
-      "data_collector": null,
-      "render_type": "buffer_ng"
-    },
-    {
-      "index": 7,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "conveyor"
-    },
-    {
-      "index": 7,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "conveyor"
-    },
-    {
-      "index": 7,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "conveyor"
-    },
-    {
-      "index": 7,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "conveyor"
-    },
-    {
-      "index": 10,
-      "name": "Panasonic",
-      "owner": "EE",
-      "data_collector": null,
-      "render_type": "panasonic_npm"
-    },
-    {
-      "index": 10,
-      "name": "Panasonic",
-      "owner": "EE",
-      "data_collector": null,
-      "render_type": "panasonic_npm"
-    },
-    {
-      "index": 7,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "conveyor"
-    },
-    {
-      "index": 7,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "conveyor"
-    },
-    {
-      "index": 7,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "conveyor"
-    },
-    {
-      "index": 11,
-      "name": "Fuzion",
-      "owner": "EE",
-      "data_collector": null,
-      "render_type": "fuzion"
-    },
-    {
-      "index": 12,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "automatic": true,
-      "data_collector": {
-        "name": "REFLOW_VI1"
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_bot_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_bot_rear"
+          }
+        ]
       },
-      "render_type": "conveyor"
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "shuttle"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "sliding"
+      },
+      {
+        "index": 11,
+        "name": "Fuzion",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "fuzion",
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "fuzion_bot"
+          }
+        ]
+      },
+      {
+        "index": 12,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "REFLOW_VI1",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "conveyor"
+      },
+      {
+        "index": 11,
+        "name": "AOI",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "aoi_holly"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Insert Pallet",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "pallet"
+      },
+      {
+        "index": 7,
+        "name": "Reflow Oven",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "reflow_oven"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor_x4"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 11,
+        "name": "AOI",
+        "owner": "EE",
+        "data_collector": {
+          "name": "AOI_B2",
+          "render": {
+            "direction": "left"
+          }
+        },
+        "render_type": "aoi_holly"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "Rotator",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "rotator"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor_x3"
+      },
+      {
+        "index": 2,
+        "name": "GKG",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": null,
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "loader_gkg_top"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "SMT_INPUT2",
+          "render": {
+            "direction": "left"
+          }
+        },
+        "render_type": "conveyor"
+      },
+      {
+        "index": 5,
+        "name": "SPI",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": {
+          "name": "SPI2",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "spi"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Shuttle",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "shuttle"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Shuttle",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "shuttle"
+      },
+      {
+        "index": 7,
+        "name": "Sliding",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "sliding"
+      },
+      {
+        "index": 11,
+        "name": "Fuzion",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "fuzion",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "fuzion_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "fuzion_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 11,
+        "name": "Fuzion",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "fuzion",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "fuzion_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "fuzion_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 12,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "REFLOW_VI2",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "conveyor"
+      },
+      {
+        "index": 11,
+        "name": "AOI",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "aoi_holly"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Insert Pallet",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "pallet"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Reflow Oven",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "reflow_oven"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Remove Pallet",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "pallet"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 11,
+        "name": "AOI",
+        "owner": "EE",
+        "data_collector": {
+          "name": "AOI_T2",
+          "render": {
+            "direction": "center"
+          }
+        },
+        "render_type": "aoi_holly"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      }
+    ],
+    "pth": [
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 10,
+        "name": "Radial",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "radial_fuzion_juki_facc"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 11,
+        "name": "Fuzion DIMM",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "fuzion",
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "radial_fuzion_juki_facc"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "Sliding",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "sliding"
+      },
+      {
+        "index": 3,
+        "name": "Juki",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "juki",
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "radial_fuzion_juki_facc"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Juki",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "juki",
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "radial_fuzion_juki_facc"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "Facc",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "facc",
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "radial_fuzion_juki_facc"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Facc",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "facc",
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "radial_fuzion_juki_facc"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "PTH_INPUT",
+          "render": {
+            "direction": "left"
+          }
+        },
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "Manual 1",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "manual_ass",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "manual_1"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Manual 2",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "manual_ass",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "manual_2"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Manual 3",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "TOUCH_INSPECT",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "manual_ass",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "manual_3"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Flux",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "Wave Soldier",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "wave_oven"
+      },
+      {
+        "index": 3,
+        "name": "Carrier Machine",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "carrier"
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "TOUCH_UP",
+          "render": {
+            "direction": "center"
+          }
+        },
+        "render_type": "conveyor_x7"
+      },
+      {
+        "index": 11,
+        "name": "AOI PTH",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "aoi_holly"
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "ICT Auto",
+        "owner": "Test",
+        "automatic": true,
+        "data_collector": {
+          "name": "ICT",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "ict_auto"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "Battery Insert",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "battery_insert"
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "Install H/S",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "install_hs"
+      },
+      {
+        "index": 3,
+        "name": "FT Cell 1",
+        "owner": "Test",
+        "automatic": true,
+        "data_collector": {
+          "name": "FT",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "ft_cell"
+      },
+      {
+        "index": 3,
+        "name": "FT Cell 2",
+        "owner": "Test",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "ft_cell"
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "Install Socket",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "install_socket"
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 11,
+        "name": "AOI",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "aoi_holly"
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "CPU Assembly",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "install_socket"
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "Packing 1",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "PACKING",
+          "render": {
+            "direction": "right",
+            "render": {
+              "direction": "right"
+            }
+          }
+        },
+        "render_type": "install_socket",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "packing"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Yaskawa",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "install_socket"
+      }
+    ]
+  },
+  "J02": {
+    "render": {
+      "label": "J02"
     },
-    {
-      "index": 11,
-      "name": "AOI",
-      "owner": "EE",
-      "data_collector": null,
-      "render_type": "aoi_holly"
-    },
-    {
-      "index": 6,
-      "name": "NG-Buffer",
-      "owner": "Automation",
-      "automatic": true,
-      "data_collector": null,
-      "render_type": "buffer_ng"
-    },
-    {
-      "index": 7,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "conveyor"
-    },
-    {
-      "index": 7,
-      "name": "Insert Pallet",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "pallet"
-    },
-    {
-      "index": 7,
-      "name": "Reflow Oven",
-      "owner": "EE",
-      "data_collector": null,
-      "render_type": "reflow_oven"
-    },
-    {
-      "index": 7,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "conveyor"
-    },
+    "smt": [
+      {
+        "index": 1,
+        "name": "Loader",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "loader",
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "loader_gkg"
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "name": "GKG",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": null,
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "loader_gkg"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "SMT_INPUT1",
+          "render": {
+            "direction": "left"
+          }
+        },
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor_x3"
+      },
+      {
+        "index": 5,
+        "name": "SPI",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": {
+          "name": "SPI1",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "spi"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Shuttle",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "shuttle"
+      },
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 7,
+        "name": "Shuttle",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "shuttle"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Sliding",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "sliding"
+      },
+      {
+        "index": 11,
+        "name": "Fuzion",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "fuzion",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "fuzion_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "fuzion_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 11,
+        "name": "Fuzion",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "fuzion",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "fuzion_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "fuzion_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 12,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "REFLOW_VI2",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "conveyor"
+      },
+      {
+        "index": 11,
+        "name": "AOI",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "aoi_holly"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Reflow Oven",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "reflow_oven"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 11,
+        "name": "AOI",
+        "owner": "EE",
+        "data_collector": {
+          "name": "AOI_B2",
+          "render": {
+            "direction": "left"
+          }
+        },
+        "render_type": "aoi_holly"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "Rotator",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "rotator"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor_x3"
+      },
+      {
+        "index": 2,
+        "name": "GKG",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": null,
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "loader_gkg_top"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "SMT_INPUT2",
+          "render": {
+            "direction": "left"
+          }
+        },
+        "render_type": "conveyor_x3"
+      },
+      {
+        "index": 5,
+        "name": "SPI",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": {
+          "name": "SPI2",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "spi"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Shuttle",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "shuttle"
+      },
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 7,
+        "name": "Shuttle",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "shuttle"
+      },
+      {
+        "index": 7,
+        "name": "Sliding",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "sliding"
+      },
+      {
+        "index": 11,
+        "name": "Fuzion",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "fuzion",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "fuzion_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "fuzion_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 11,
+        "name": "Fuzion",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "fuzion",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "fuzion_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "fuzion_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 11,
+        "name": "Fuzion",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "fuzion",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "fuzion_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "fuzion_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 12,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "REFLOW_VI2",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "conveyor"
+      },
+      {
+        "index": 11,
+        "name": "AOI",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "aoi_holly"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor_x3"
+      },
+      {
+        "index": 7,
+        "name": "Reflow Oven",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "reflow_oven"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor_x3"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 11,
+        "name": "AOI",
+        "owner": "EE",
+        "data_collector": {
+          "name": "AOI_T2",
+          "render": {
+            "direction": "center"
+          }
+        },
+        "render_type": "aoi_holly"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      }
+    ],
+    "pth": [
 
-    {
-      "index": 6,
-      "name": "NG-Buffer",
-      "owner": "Automation",
-      "automatic": true,
-      "data_collector": null,
-      "render_type": "buffer_ng"
-    },
-    {
-      "index": 7,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "conveyor"
-    },
-    {
-      "index": 11,
-      "name": "AOI",
-      "owner": "EE",
-      "data_collector": {
-        "name": "AOI_B2"
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "TOUCH_UP",
+          "render": {
+            "direction": "center"
+          }
+        },
+        "render_type": "conveyor_x3"
       },
-      "render_type": "aoi_holly"
+      {
+        "index": 3,
+        "name": "ICT Auto",
+        "owner": "Test",
+        "automatic": true,
+        "data_collector": {
+          "name": "ICT",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "ict"
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor_x3"
+      },
+      {
+        "index": 3,
+        "name": "FT Grid",
+        "owner": "Test",
+        "automatic": true,
+        "data_collector": {
+          "name": "FT",
+          "render": {
+            "direction": "left"
+          }
+        },
+        "render_type": "ft_grid"
+      },
+      {
+        "index": 3,
+        "name": "CPU Assembly",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "FINAL_VI",
+          "render": {
+            "direction": "left"
+          }
+        },
+        "render_type": "back_plate"
+      },
+      {
+        "index": 3,
+        "name": "Manual 1",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "manual_ass",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "manual_1"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Manual 2",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "manual_ass",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "manual_2"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Manual 3",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "FINAL_INSPECT",
+          "render": {
+            "direction": "left"
+          }
+        },
+        "render_type": "manual_ass",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "manual_3"
+          }
+        ]
+      },
+
+      {
+        "index": 3,
+        "name": "Manual 3",
+        "owner": "Automation",
+        "automatic": true,
+
+        "render_type": "manual_ass",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "manual_3"
+          }
+        ]
+      },
+
+      {
+        "index": 3,
+        "name": "Packing",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "PACKING",
+          "render": {
+            "direction": "right",
+            "render": {
+              "direction": "right"
+            }
+          }
+        },
+        "render_type": "install_socket",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "packing"
+          }
+        ]
+      }
+
+    ]
+  },
+  "J03": {
+    "render": {
+      "label": "J03"
     },
-    {
-      "index": 6,
-      "name": "NG-Buffer",
-      "owner": "Automation",
-      "automatic": true,
-      "data_collector": null,
-      "render_type": "buffer_ng"
+    "smt": [
+      {
+        "index": 1,
+        "name": "Loader",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "loader",
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "loader_gkg"
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "name": "GKG",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": null,
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "loader_gkg"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "SMT_INPUT1",
+          "render": {
+            "direction": "left"
+          }
+        },
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor_x3"
+      },
+      {
+        "index": 5,
+        "name": "SPI",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": {
+          "name": "SPI1",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "spi"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Shuttle",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "shuttle"
+      },
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 7,
+        "name": "Shuttle",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "shuttle"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Sliding",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "sliding"
+      },
+      {
+        "index": 11,
+        "name": "Fuzion",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "fuzion",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "fuzion_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "fuzion_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 11,
+        "name": "Fuzion",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "fuzion",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "fuzion_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "fuzion_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 12,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "REFLOW_VI2",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "conveyor"
+      },
+      {
+        "index": 11,
+        "name": "AOI",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "aoi_holly"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Reflow Oven",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "reflow_oven"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 11,
+        "name": "AOI",
+        "owner": "EE",
+        "data_collector": {
+          "name": "AOI_B2",
+          "render": {
+            "direction": "left"
+          }
+        },
+        "render_type": "aoi_holly"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "Rotator",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "rotator"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor_x3"
+      },
+      {
+        "index": 2,
+        "name": "GKG",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": null,
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "loader_gkg_top"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "SMT_INPUT2",
+          "render": {
+            "direction": "left"
+          }
+        },
+        "render_type": "conveyor_x3"
+      },
+      {
+        "index": 5,
+        "name": "SPI",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": {
+          "name": "SPI2",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "spi"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Shuttle",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "shuttle"
+      },
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 7,
+        "name": "Shuttle",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "shuttle"
+      },
+      {
+        "index": 7,
+        "name": "Sliding",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "sliding"
+      },
+      {
+        "index": 11,
+        "name": "Fuzion",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "fuzion",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "fuzion_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "fuzion_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 11,
+        "name": "Fuzion",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "fuzion",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "fuzion_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "fuzion_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 11,
+        "name": "Fuzion",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "fuzion",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "fuzion_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "fuzion_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 12,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "REFLOW_VI2",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "conveyor"
+      },
+      {
+        "index": 11,
+        "name": "AOI",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "aoi_holly"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor_x3"
+      },
+      {
+        "index": 7,
+        "name": "Reflow Oven",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "reflow_oven"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor_x3"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 11,
+        "name": "AOI",
+        "owner": "EE",
+        "data_collector": {
+          "name": "AOI_T2",
+          "render": {
+            "direction": "center"
+          }
+        },
+        "render_type": "aoi_holly"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      }
+    ],
+    "pth": [
+
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "TOUCH_UP",
+          "render": {
+            "direction": "center"
+          }
+        },
+        "render_type": "conveyor_x3"
+      },
+      {
+        "index": 3,
+        "name": "ICT Auto",
+        "owner": "Test",
+        "automatic": true,
+        "data_collector": {
+          "name": "ICT",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "ict"
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor_x3"
+      },
+      {
+        "index": 3,
+        "name": "FT Grid",
+        "owner": "Test",
+        "automatic": true,
+        "data_collector": {
+          "name": "FT",
+          "render": {
+            "direction": "left"
+          }
+        },
+        "render_type": "ft_grid"
+      },
+      {
+        "index": 3,
+        "name": "CPU Assembly",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "FINAL_VI",
+          "render": {
+            "direction": "left"
+          }
+        },
+        "render_type": "back_plate"
+      },
+      {
+        "index": 3,
+        "name": "Manual 1",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "manual_ass",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "manual_1"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Manual 2",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "manual_ass",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "manual_2"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Manual 3",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "FINAL_INSPECT",
+          "render": {
+            "direction": "left"
+          }
+        },
+        "render_type": "manual_ass",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "manual_3"
+          }
+        ]
+      },
+
+      {
+        "index": 3,
+        "name": "Manual 3",
+        "owner": "Automation",
+        "automatic": true,
+
+        "render_type": "manual_ass",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "manual_3"
+          }
+        ]
+      },
+
+      {
+        "index": 3,
+        "name": "Packing",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "PACKING",
+          "render": {
+            "direction": "right",
+            "render": {
+              "direction": "right"
+            }
+          }
+        },
+        "render_type": "install_socket",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "packing"
+          }
+        ]
+      }
+
+    ]
+  },
+  "J05": {
+    "render": {
+      "label": "J02"
     },
-    {
-      "index": 7,
-      "name": "Conveyor",
-      "owner": "Automation",
-      "data_collector": null,
-      "render_type": "conveyor"
-    }
-  ]
+    "smt": [],
+    "pth": []
+  },
+  "J06": {
+    "render": {
+      "label": "J02"
+    },
+    "smt": [],
+    "pth": []
+  },
+  "J07": {
+    "render": {
+      "label": "J02"
+    },
+    "smt": [],
+    "pth": []
+  },
+  "J08": {
+    "render": {
+      "label": "J02"
+    },
+    "smt": [],
+    "pth": []
+  },
+  "J09": {
+    "render": {
+      "label": "J02"
+    },
+    "smt": [],
+    "pth": []
+  },
+  "J10": {
+    "render": {
+      "label": "J11"
+    },
+    "smt": [
+      {
+        "index": 1,
+        "name": "Loader",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "loader",
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "loader_gkg"
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "name": "GKG",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": null,
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "loader_gkg"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "SMT_INPUT1",
+          "render": {
+            "direction": "left"
+          }
+        },
+        "render_type": "conveyor"
+      },
+      {
+        "index": 5,
+        "name": "SPI",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": {
+          "name": "SPI1",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "spi"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor_x5"
+      },
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_bot_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_bot_rear"
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_bot_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_bot_rear"
+          }
+        ]
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Sliding",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "sliding"
+      },
+      {
+        "index": 11,
+        "name": "Fuzion",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "fuzion",
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "fuzion_bot"
+          }
+        ]
+      },
+      {
+        "index": 12,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "REFLOW_VI1",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "conveyor"
+      },
+      {
+        "index": 11,
+        "name": "AOI",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "aoi_holly"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Reflow Oven",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "reflow_oven"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor_x4"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor_x4"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 11,
+        "name": "AOI",
+        "owner": "EE",
+        "data_collector": {
+          "name": "AOI_B2",
+          "render": {
+            "direction": "left"
+          }
+        },
+        "render_type": "aoi_holly"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "Rotator",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "rotator"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 2,
+        "name": "GKG",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": null,
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "loader_gkg_top"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "SMT_INPUT2",
+          "render": {
+            "direction": "left"
+          }
+        },
+        "render_type": "conveyor"
+      },
+      {
+        "index": 5,
+        "name": "SPI",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": {
+          "name": "SPI2",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "spi"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Shuttle",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "shuttle"
+      },
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 7,
+        "name": "Shuttle",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "shuttle"
+      },
+      {
+        "index": 7,
+        "name": "Sliding",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "sliding"
+      },
+      {
+        "index": 11,
+        "name": "Fuzion",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "fuzion",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "fuzion_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "fuzion_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 11,
+        "name": "Fuzion",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "fuzion",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "fuzion_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "fuzion_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 12,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "REFLOW_VI2",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "conveyor"
+      },
+      {
+        "index": 11,
+        "name": "AOI",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "aoi_holly"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Reflow Oven",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "reflow_oven"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 11,
+        "name": "AOI",
+        "owner": "EE",
+        "data_collector": {
+          "name": "AOI_T2",
+          "render": {
+            "direction": "center"
+          }
+        },
+        "render_type": "aoi_holly"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Sliding",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "sliding"
+      }
+    ],
+    "pth": [
+      {
+        "index": 3,
+        "name": "Juki",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "juki",
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "radial_fuzion_juki_facc"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Juki",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "juki",
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "radial_fuzion_juki_facc"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "PTH_INPUT",
+          "render": {
+            "direction": "left"
+          }
+        },
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "Manual 1",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "manual_ass",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "manual_1"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Manual 2",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "manual_ass",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "manual_2"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Manual 3",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "manual_ass",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "manual_2"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Manual 4",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "manual_ass",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "manual_2"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Manual 5",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "TOUCH_INSPECT",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "manual_ass",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "manual_3"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Flux",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "Wave Soldier",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "wave_oven"
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "TOUCH_UP",
+          "render": {
+            "direction": "center"
+          }
+        },
+        "render_type": "conveyor"
+      },
+      {
+        "index": 11,
+        "name": "AOI PTH",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "aoi_holly"
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "ICT Auto",
+        "owner": "Test",
+        "automatic": true,
+        "data_collector": {
+          "name": "ICT",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "ict_auto"
+      },
+      {
+        "index": 3,
+        "name": "FT Cell 1",
+        "owner": "Test",
+        "automatic": true,
+        "data_collector": {
+          "name": "FT",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "ft_cell"
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "Install Socket",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "install_socket"
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "CPU Assembly",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "install_socket"
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "Packing",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "PACKING",
+          "render": {
+            "direction": "right",
+            "render": {
+              "direction": "right"
+            }
+          }
+        },
+        "render_type": "install_socket",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "packing"
+          }
+        ]
+      }
+    ]
+  },
+  "J11": {
+    "render": {
+      "label": "J11"
+    },
+    "smt": [
+      {
+        "index": 1,
+        "name": "Loader",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "loader",
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "loader_gkg"
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "name": "GKG",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": null,
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "loader_gkg"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "SMT_INPUT1",
+          "render": {
+            "direction": "left"
+          }
+        },
+        "render_type": "conveyor"
+      },
+      {
+        "index": 5,
+        "name": "SPI",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": {
+          "name": "SPI1",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "spi"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor_x5"
+      },
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_bot_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_bot_rear"
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_bot_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_bot_rear"
+          }
+        ]
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Sliding",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "sliding"
+      },
+      {
+        "index": 11,
+        "name": "Fuzion",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "fuzion",
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "fuzion_bot"
+          }
+        ]
+      },
+      {
+        "index": 12,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "REFLOW_VI1",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "conveyor"
+      },
+      {
+        "index": 11,
+        "name": "AOI",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "aoi_holly"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Reflow Oven",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "reflow_oven"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor_x4"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor_x4"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 11,
+        "name": "AOI",
+        "owner": "EE",
+        "data_collector": {
+          "name": "AOI_B2",
+          "render": {
+            "direction": "left"
+          }
+        },
+        "render_type": "aoi_holly"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "Rotator",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "rotator"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 2,
+        "name": "GKG",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": null,
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "loader_gkg_top"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "SMT_INPUT2",
+          "render": {
+            "direction": "left"
+          }
+        },
+        "render_type": "conveyor"
+      },
+      {
+        "index": 5,
+        "name": "SPI",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": {
+          "name": "SPI2",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "spi"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Shuttle",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "shuttle"
+      },
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "name": "Panasonic",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "panasonic_npm",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "panasonic_npm_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "panasonic_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 7,
+        "name": "Shuttle",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "shuttle"
+      },
+      {
+        "index": 7,
+        "name": "Sliding",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "sliding"
+      },
+      {
+        "index": 11,
+        "name": "Fuzion",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "fuzion",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "fuzion_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "fuzion_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 11,
+        "name": "Fuzion",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "fuzion",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "fuzion_top_front"
+          },
+          {
+            "render": "rear",
+            "bound": "fuzion_npm_top_rear"
+          }
+        ]
+      },
+      {
+        "index": 12,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "REFLOW_VI2",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "conveyor"
+      },
+      {
+        "index": 11,
+        "name": "AOI",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "aoi_holly"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Reflow Oven",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "reflow_oven"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 11,
+        "name": "AOI",
+        "owner": "EE",
+        "data_collector": {
+          "name": "AOI_T2",
+          "render": {
+            "direction": "center"
+          }
+        },
+        "render_type": "aoi_holly"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 7,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 7,
+        "name": "Sliding",
+        "owner": "Automation",
+        "data_collector": null,
+        "render_type": "sliding"
+      }
+    ],
+    "pth": [
+      {
+        "index": 3,
+        "name": "Juki",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "juki",
+        "operators": [
+          {
+            "render": "rear",
+            "bound": "radial_fuzion_juki_facc"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "PTH_INPUT",
+          "render": {
+            "direction": "left"
+          }
+        },
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "Manual 1",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "manual_ass",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "manual_1"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Manual 2",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "manual_ass",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "manual_2"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Manual 3",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "manual_ass",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "manual_2"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Manual 4",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "manual_ass",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "manual_2"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Manual 5",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "TOUCH_INSPECT",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "manual_ass",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "manual_3"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "Flux",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "Wave Soldier",
+        "owner": "EE",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "wave_oven"
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "TOUCH_UP",
+          "render": {
+            "direction": "center"
+          }
+        },
+        "render_type": "conveyor"
+      },
+      {
+        "index": 11,
+        "name": "AOI PTH",
+        "owner": "EE",
+        "data_collector": null,
+        "render_type": "aoi_holly"
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 6,
+        "name": "NG-Buffer",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "buffer_ng"
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "ICT Auto",
+        "owner": "Test",
+        "automatic": true,
+        "data_collector": {
+          "name": "ICT",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "ict_auto"
+      },
+      {
+        "index": 3,
+        "name": "FT Cell 1",
+        "owner": "Test",
+        "automatic": true,
+        "data_collector": {
+          "name": "FT",
+          "render": {
+            "direction": "right"
+          }
+        },
+        "render_type": "ft_cell"
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "Install Socket",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "install_socket"
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "CPU Assembly",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "install_socket"
+      },
+      {
+        "index": 3,
+        "name": "Conveyor",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": null,
+        "render_type": "conveyor"
+      },
+      {
+        "index": 3,
+        "name": "Packing",
+        "owner": "Automation",
+        "automatic": true,
+        "data_collector": {
+          "name": "PACKING",
+          "render": {
+            "direction": "right",
+            "render": {
+              "direction": "right"
+            }
+          }
+        },
+        "render_type": "install_socket",
+        "operators": [
+          {
+            "render": "front",
+            "bound": "packing"
+          }
+        ]
+      }
+    ]
+  }
 }
